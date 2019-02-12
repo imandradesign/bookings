@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+
+
+    <div class="jumbotron">
+
+
+    <div class="container">
+      <div id="survey">
+      <form>
+        <div class="form-group">
+          <label for="name">Enter your full name!</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="birthday">Enter your birthday!</label>
+          <input type="date" id="birthday" class="form-control">
+
+        </div>
+        <div class="form-group">
+          <label for="ice-cream">Select your preferred flavor</label>
+          <select class="form-control" id="ice-cream">
+          <option>Coffee</option>
+          <option>Vanilla</option>
+          <option>Chocolate</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input type="color" id="color" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="sports">Choose a sport</label>
+          <div class="soccer">
+            <label>
+              <input type="radio" name="sports" value="soccer" checked>
+              Soccer
+            </label>
+          </div>
+          <div class="swimming">
+            <label>
+              <input type="radio" name="sports" value="swimming">
+              Swimming
+            </label>
+          </div>
+          <div class="squash">
+            <label>
+              <input type="radio" name="sports" value="squash">
+              Squash
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success">submit</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

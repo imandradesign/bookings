@@ -1,3 +1,10 @@
 #confirmation {
 display: none;
 }
+
+#contact-list {
+  display: none;
+}
+li {
+  display: none;
+}

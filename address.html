@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Address book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Add new contacts to your list</h2>
+      <div id="address-form">
+        <form>
+          <div class="form-group">
+            <label for="name">Enter new contact's full name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Enter new contact's phone number</label>
+            <input type="number" class="form-control" id="phone">
+          </div>
+          <div class="form-group">
+            <label for="e-mail">Enter new contact's e-mail</label>
+            <input type="email" class="form-control" id="e-mail">
+            <div class="form-group">
+            <label for="street-address">Address</label>
+            <input id="street-address" class="form-control" type="text">
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input id="city" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="state">State</label>
+                <input id="state" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="zip-code">Zip code</label>
+                <input id="zip-code" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+          </div>
+          <button type="submit" class="btn btn-warning">Add Contact</button>
+        </form>
+
+        <div id="contact-list">
+          <h4>Your Contacts:</h4>
+          <p id="name-click">Name: <span class="name"></span></p>
+          <ul>
+            <li>Phone: <span class="phone"></span></li>
+            <li>Email: <span class="e-mail"></span></li>
+            <li>Address: <span class="street-address"></span> <span class="city"></span>, <span class="state"></span> <span class="zip-code"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
