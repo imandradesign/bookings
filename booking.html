@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Bookings</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+
+
+    <div class="container">
+      <h3>Book An Appointment</h3>
+      <div id="booking-form">
+        <form>
+          <div class="form-group">
+            <label for="full-name">Enter your full name</label>
+            <input type="text" class="form-control" id="full-name">
+          </div>
+          <div class="form-group">
+            <label for="date">What day do want your appointment?</label>
+            <input type="date" data-date-inline-picker="true" class="form-control" id="date">
+          </div>
+          <div class="form-group">
+            <label for="start-time">What time would you like to start your appointment?</label>
+            <input type="time" class="form-control" id="start-time" min="9:00" max="18:00">
+          </div>
+          <div class="form-group">
+            <label for="end-time">What time would you like to end your appointment?</label>
+            <input type="time" class="form-control" id="end-time" min="9:00" max="18:00">
+          </div>
+          <button type="submit" class="btn btn-info">Book</button>
+        </form>
+      </div>
+      <div id="confirmation">
+        <h3>Thanks for booking for appointment, <span class="full-name"></span>!</h3>
+        <p>Your appointment is scheduled for <span class="date"></span> , from <span class="start-time"></span> to <span class="end-time"></span>.</p>
+
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
